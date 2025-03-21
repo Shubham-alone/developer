@@ -12,7 +12,7 @@ const Women = () => {
     const [error, setError] = useState(null);
 
     useEffect( () => {
-      axios.get('http://localhost:5432/products/category/Women')
+      axios.get('https://developer-1.onrender.com/products/category/Women')
       .then((response) => {
         setproducts(response.data.product)
         setLoading(false)

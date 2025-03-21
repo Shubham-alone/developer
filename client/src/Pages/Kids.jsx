@@ -9,7 +9,7 @@ const Kids = () => {
     const [error, setError] = useState(null);
 
     useEffect( () => {
-      axios.get('http://localhost:5432/products/category/Kids')
+      axios.get('https://developer-1.onrender.com/products/category/Kids')
       .then( (response) => {
            setProducts(response.data.product)
            setLoading(false)

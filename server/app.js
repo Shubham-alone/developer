@@ -4,6 +4,9 @@ const connectDB = require('./config/db');
 const routes = require('./Routes/index');
 const cors = require('cors');
 const path = require('path');
+const corsOptions = {
+  origin:"https://developer-1.onrender.com"
+}
 
 dotenv.config();
 connectDB();
@@ -21,7 +24,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.use('/', routes);
 

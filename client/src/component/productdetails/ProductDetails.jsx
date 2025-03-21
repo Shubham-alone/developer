@@ -15,7 +15,7 @@ const ProductDetails = () => {
     const {addToCart} = useCart();
 
   useEffect(() => {
-      axios.get(`http://localhost:5432/products/id/${id}`)
+      axios.get(`https://developer-1.onrender.com/products/id/${id}`)
       .then( (response) => {
           setProduct(response.data.product[0])
           setLoading(false)

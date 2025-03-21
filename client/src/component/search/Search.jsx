@@ -15,7 +15,7 @@ const Search = () => {
 
     useEffect(() => {
 
-      axios.get(`http://localhost:5432/search?query=${(query)}`)
+      axios.get(`https://developer-1.onrender.com/search?query=${(query)}`)
       .then((response) => {
         setProducts(response.data.product);
         setLoading(false);

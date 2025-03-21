@@ -12,7 +12,7 @@ const Shop = () => {
       const [error, setError] = useState(null);
 
       useEffect( () => {
-        axios.get('http://localhost:5432/products')
+        axios.get('https://developer-1.onrender.com/products')
         .then((response) => {
           setproducts(response.data.list)
           setLoading(false)

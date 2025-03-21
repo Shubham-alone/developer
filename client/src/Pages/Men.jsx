@@ -11,7 +11,7 @@ const Men = () => {
   const [error, setError] = useState(null);
 
   useEffect( () => {
-      axios.get('http://localhost:5432/products/category/Men')
+      axios.get('https://developer-1.onrender.com/products/category/Men')
       .then( (response) => {
            setProducts(response.data.product)
            setLoading(false)
