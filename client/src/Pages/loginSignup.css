@@ -1,0 +1,120 @@
+/* Login/Signup Container */
+.loginsignup {
+  background: #ebedef; /* Darker light gray background */
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Inner Container */
+.loginsignup-container {
+  background: #f5f6f8; /* Slightly darker off-white */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly darker shadow */
+  width: 100%;
+  max-width: 400px;
+  color: #2c3e50; /* Dark slate text */
+}
+
+.loginsignup-container h1 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1a2b3c; /* Darker text color */
+}
+
+/* Input Fields */
+.loginsignup-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.loginsignup-fields input {
+  background: #ebedef; /* Darker light gray background */
+  border: 2px solid #2980b9; /* Darker accent blue */
+  color: #2c3e50; /* Dark slate text */
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.loginsignup-fields input::placeholder {
+  color: #7f8c8d; /* Muted gray for placeholder */
+}
+
+.loginsignup-fields input:focus {
+  border-color: #1f618d; /* Even darker blue on focus */
+}
+
+/* Continue Button */
+.loginsignup-container button {
+  background: #2980b9; /* Darker accent blue */
+  border: none;
+  color: #ffffff; /* White text */
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.loginsignup-container button:hover {
+  background: #1f618d; /* Even darker blue on hover */
+}
+
+/* Login Prompt */
+.loginsignup-login {
+  font-size: 14px;
+  text-align: center;
+  color: #7f8c8d; /* Muted gray for secondary text */
+  margin-top: 20px;
+}
+
+.loginsignup-login span {
+  color: #2980b9; /* Darker accent blue */
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.loginsignup-login span:hover {
+  color: #1f618d; /* Even darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .loginsignup {
+    padding: 15px;
+  }
+
+  .loginsignup-container {
+    padding: 20px;
+  }
+
+  .loginsignup-container h1 {
+    font-size: 24px;
+  }
+
+  .loginsignup-fields input {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .loginsignup-container button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .loginsignup-login {
+    font-size: 12px;
+  }
+}

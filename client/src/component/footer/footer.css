@@ -1,0 +1,144 @@
+/* Footer Container */
+.footer {
+  background: #a1a6ab; /* Even darker gray than #bdc3c7 */
+  padding: 40px;
+  color: #2c3e50; /* Dark slate text */
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2); /* Darker shadow for contrast */
+}
+
+/* Footer Logo */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  text-decoration: none; /* Removes Link underline */
+}
+
+.footer-logo img {
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+  transition: transform 0.3s ease; /* Matches theme transitions */
+}
+
+.footer-logo:hover img {
+  transform: scale(1.1); /* Matches theme hover effect */
+}
+
+.footer-logo p {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2980b9; /* Darker accent blue */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
+.footer-links li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2c3e50; /* Dark slate text */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Matches theme transitions */
+}
+
+.footer-links li:hover {
+  color: #2980b9; /* Darker accent blue on hover */
+}
+
+/* Social Icons */
+.footer-social-icon {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-icon-container {
+  background: #bdc3c7; /* Darker gray for contrast with footer */
+  border: 2px solid #2980b9; /* Darker accent blue border */
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease; /* Matches theme transitions */
+}
+
+.footer-icon-container:hover {
+  background: #2980b9; /* Darker accent blue on hover */
+}
+
+.footer-icon-container img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) saturate(100%) hue-rotate(180deg); /* Adjusts icon color to match theme */
+}
+
+.footer-icon-container:hover img {
+  filter: brightness(100%) saturate(100%); /* White icons on hover */
+}
+
+/* Copyright Section */
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright hr {
+  border: none;
+  height: 1px;
+  background: #2980b9; /* Darker accent blue */
+  margin-bottom: 15px;
+}
+
+.footer-copyright p {
+  font-size: 14px;
+  color: #7f8c8d; /* Muted gray for secondary text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-logo img {
+    width: 50px;
+  }
+
+  .footer-logo p {
+    font-size: 24px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer-social-icon {
+    gap: 15px;
+  }
+
+  .footer-icon-container {
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+  }
+
+  .footer-icon-container img {
+    width: 18px;
+    height: 18px;
+  }
+}

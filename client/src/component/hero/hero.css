@@ -1,0 +1,143 @@
+/* hero.css */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px;
+  background-color: #bdc3c7; /* Even darker gray */
+  min-height: 70vh;
+}
+
+/* Hero Left Section */
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-left h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1a2b3c; /* Darker text color */
+  letter-spacing: 1px;
+}
+
+.hero-left > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-hand-icon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.hero-hand-icon p {
+  font-size: 40px;
+  font-weight: 700;
+  color: #2c3e50; /* Slightly darker shade */
+  margin: 0;
+}
+
+.hero-hand-icon img {
+  width: 60px;
+  height: auto;
+}
+
+.hero-left p {
+  font-size: 40px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.hero-left p:nth-child(2) {
+  color: #2980b9; /* Darker accent color for "collections" */
+}
+
+/* Latest Collection Button */
+.hero-latest-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #2980b9; /* Darker blue for button */
+  color: #ffffff;
+  width: fit-content;
+  padding: 12px 25px;
+  border-radius: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-latest-button div {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hero-latest-button img {
+  width: 20px;
+  height: auto;
+  filter: brightness(0) invert(1); /* Keeps arrow white */
+}
+
+.hero-latest-button:hover {
+  background-color: #1f618d; /* Even darker on hover */
+  transform: translateX(5px);
+}
+
+/* Hero Right Section */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for contrast */
+  transition: transform 0.3s ease;
+}
+
+.hero-right img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-left {
+    align-items: center;
+  }
+
+  .hero-hand-icon {
+    justify-content: center;
+  }
+
+  .hero-left p {
+    font-size: 30px;
+  }
+
+  .hero-latest-button {
+    margin: 20px auto;
+  }
+
+  .hero-right {
+    margin-top: 20px;
+  }
+
+  .hero-right img {
+    max-width: 80%;
+  }
+}

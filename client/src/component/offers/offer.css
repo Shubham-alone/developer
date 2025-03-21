@@ -1,0 +1,106 @@
+/* offer.css */
+.offers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px;
+  background-color: #bdc3c7; /* Even darker gray to match updated Hero */
+}
+
+/* Offers Left Section */
+.offers-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.offers-left h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a2b3c; /* Darker text color */
+  margin: 0;
+  line-height: 1.1;
+}
+
+.offers-left h1:nth-child(2) {
+  color: #2980b9; /* Darker accent blue for "Offers For You" */
+}
+
+.offers-left p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2c3e50; /* Darker slate color */
+  margin: 10px 0;
+  letter-spacing: 0.5px;
+}
+
+.offers-left button {
+  width: fit-content;
+  padding: 12px 30px;
+  background-color: #2980b9; /* Darker blue */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.offers-left button:hover {
+  background-color: #1f618d; /* Even darker on hover */
+  transform: translateX(5px);
+}
+
+/* Offers Right Section */
+.offers-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.offers-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for contrast */
+  transition: transform 0.3s ease;
+}
+
+.offers-right img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .offers {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .offers-left {
+    align-items: center;
+  }
+
+  .offers-left h1 {
+    font-size: 36px;
+  }
+
+  .offers-left p {
+    font-size: 16px;
+  }
+
+  .offers-left button {
+    margin: 20px auto;
+  }
+
+  .offers-right {
+    margin-top: 20px;
+  }
+
+  .offers-right img {
+    max-width: 80%;
+  }
+}
