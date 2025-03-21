@@ -11,7 +11,7 @@ const Search = () => {
     const query = searchParams.get('query');
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [error] = useState(null);
 
     useEffect(() => {
 
