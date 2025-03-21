@@ -4,9 +4,6 @@ const connectDB = require('./config/db');
 const routes = require('./Routes/index');
 const cors = require('cors');
 const path = require('path');
-const corsOptions = {
-  origin:"https://developer-1.onrender.com"
-}
 
 dotenv.config();
 connectDB();
@@ -24,13 +21,13 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(cors(corsOptions));
+app.use(cors({ origin: '*'}));
 
 app.use('/', routes);
 
-app.use(express.static(path.join(_dirname, "/client/build")));
+app.use(express.static(path.join(_dirname, '/client/build')));
 app.get('*', ( req, res) => {
-     res.sendFile(path.resolve(_dirname, '/client/build/index.html'));
+     res.sendFile(path.join(_dirname, '/client/build/index.html'));
 })
 
 app.listen(port, () => {
