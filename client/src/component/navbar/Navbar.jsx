@@ -61,10 +61,14 @@ const Navbar = () => {
         <div className="nav-login-cart">
            <Link to='/login'><button>Login</button></Link>
            <Link to='/cart'>
+             <div className='cart-container'>
                 <img src={cart_icon} alt="" id='cart-icon' />
+
+                <div className="nav-cart-count">{cartItems.length}</div>
+              </div>
             </Link>
           
-            <div className="nav-cart-count">{cartItems.length}</div>
+          
         </div>
   
         </div>
